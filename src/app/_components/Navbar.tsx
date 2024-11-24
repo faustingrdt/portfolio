@@ -22,7 +22,7 @@ export default function Navbar() {
             <AlignJustify strokeWidth={2.25} />
           )}
         </div>
-        <div className="font-semibold text-2xl text-white ">Faustin.dev</div>
+        <div className="font-semibold text-2xl ">Faustin.dev</div>
       </div>
       <div className="flex items-center gap-2">
         <div className="hovered ">
@@ -34,9 +34,9 @@ export default function Navbar() {
             <Github strokeWidth={2.25} />
           </Link>
         </div>
-        <div className="hovered ">
+        {/* <div className="hovered ">
           <Languages strokeWidth={2.25} />
-        </div>
+        </div> */}
         <div className="hovered">
           {theme === "dark" ? (
             <Moon strokeWidth={2.25} onClick={() => setTheme("light")} />

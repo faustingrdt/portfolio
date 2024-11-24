@@ -14,13 +14,13 @@ export default function RootLayout({
         <Theme>
           <Navbar />
           <div
-            className="flex h-full overflow-hidden  "
+            className="flex h-full overflow-hidden "
             style={{
               height: "calc(100vh - 64px)",
             }}
           >
             <SideBar />
-            <main className=" w-full p-4 bg-bglight dark:bg-bgdark h-full  ">
+            <main className=" overflow-y-auto overflow-x-hidden w-full flex-shrink p-4 bg-bglight dark:bg-bgdark h-full  ">
               {children}
             </main>
           </div>

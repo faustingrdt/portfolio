@@ -77,7 +77,7 @@ const list = [
 
 export default function Page() {
   return (
-    <Carousel className=" h-full ">
+    <Carousel className=" h-full px-1 ">
       <CarouselContent className="h-full ">
         {list.map((p, index) => (
           <CarouselItem key={index} className="h-full">

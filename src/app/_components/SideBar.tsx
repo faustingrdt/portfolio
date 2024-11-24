@@ -50,7 +50,7 @@ export default function SideBar() {
               isSidebarOpen && mobile ? "translate-x-0" : "-translate-x-full"
             }`}
           >
-            <div className=" flex flex-col gap-4 ">
+            <div className=" flex flex-col gap-4 flex-shrink-0 ">
               {links.map((link) => (
                 <SidebarLink
                   key={link.href}
@@ -65,7 +65,7 @@ export default function SideBar() {
         </div>
       ) : (
         <div
-          className={`border-r h-full p-4 bg-white dark:bg-gray-800 dark:border-gray-500 transition-all duration-300 ease-in-out ${
+          className={`border-r flex-shrink-0 h-full p-4 bg-white dark:bg-gray-800 dark:border-gray-500 transition-all duration-300 ease-in-out ${
             isSidebarOpen || isHovered ? "w-48" : "w-[4.6rem]"
           }  `}
           onMouseEnter={() => setIsHovered(true)}
