@@ -1,27 +1,22 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { CgMail } from "react-icons/cg";
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Home() {
+  const t = useTranslations("HomePage");
   return (
     <div className="content overflow-auto invisible-scrollbar  h-full  ">
       <div className="flex  items-center justify-center xl:h-3/4">
         <div className="flex max-md:flex-col-reverse max-md:gap-10 justify-between items-center ">
           <div className="flex flex-col gap-10 md:w-1/2 items-center justify-center">
             <h2 className=" text-3xl xl:text-4xl font-bold md ">
-              Bonjour, Je suis Faustin développeur Fullstack en freelance !
+              {t("title")}
             </h2>
             <div className=" text-lg xl:text-xl ">
-              Je suis un développeur passionné par le code, à l'aise aussi bien
-              en <span className="underline">frontend qu'en backend</span>. Mon
-              expertise me permet d'ajouter de nouvelles fonctionnalités à des
-              projets existants ou de créer une application complète à partir de
-              zéro. J'utilise principalement{" "}
-              <span className="underline">React</span> et{" "}
-              <span className="underline">Next.Js</span> avec{" "}
-              <span className="underline">Typescript</span> et{" "}
-              <span className="underline">Tailwind CSS</span>. Je suis aussi à
-              l'aise avec l'intégration de moyen de paiement comme Stripe.
+              {t.rich("about", {
+                line: (chunks) => <span className="underline">{chunks}</span>,
+              })}
             </div>
           </div>
           <div className="md:w-1/2 flex items-center justify-center">
@@ -40,7 +35,7 @@ export default function Home() {
         </div>
       </div>
       <div className="md:h-1/4 space-y-5">
-        <h3 className="text-3xl underline font-semibold">Contact :</h3>
+        <h3 className="text-3xl underline font-semibold">{t("contact")} :</h3>
         <div className="flex max-md:flex-col gap-5">
           <div className="flex flex-col">
             <label htmlFor="" className="flex items-center gap-2 text-2xl">

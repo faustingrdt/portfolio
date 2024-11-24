@@ -1,15 +1,11 @@
 "use client";
 
 import { FolderOpenDot, SquareUserRound } from "lucide-react";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import { useState } from "react";
 import useNavStore from "../store/NavStore";
 import { useMediaQuery } from "usehooks-ts";
-
-const links = [
-  { href: "/", icon: SquareUserRound, label: "A propos" },
-  { href: "/projects", icon: FolderOpenDot, label: "Projets" },
-];
+import { useTranslations } from "next-intl";
 
 function SidebarLink({
   href,
@@ -40,6 +36,12 @@ export default function SideBar() {
   const isSidebarOpen = useNavStore((state) => state.isSidebarOpen);
   const toggleSidebar = useNavStore((state) => state.toggleSidebar);
   const mobile = useMediaQuery("(max-width: 768px)");
+  const t = useTranslations("Sidebar");
+
+  const links = [
+    { href: "/", icon: SquareUserRound, label: t("about") },
+    { href: "/projects", icon: FolderOpenDot, label: t("projects") },
+  ];
 
   return (
     <>

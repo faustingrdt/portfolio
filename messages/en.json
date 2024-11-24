@@ -1,0 +1,81 @@
+{
+  "metatitle": "Faustin.dev | EN ",
+  "metadesc": "The best portfolio on the planet",
+  "Sidebar": {
+    "about": "About",
+    "projects": "My Projects"
+  },
+
+  "HomePage": {
+    "title": "Hi, I'm Faustin, full-stack freelance developer!",
+    "about": "I'm a developer with a passion for code, equally at home on the  <line>frontend</line> and the <line>backend</line>. My expertise allows me to add new features to existing projects or create a complete application from scratch. I mainly use <line>React</line> and <line>Next.Js</line> with <line>Typescript</line> and <line>Tailwind CSS</line>. I'm also comfortable with integrating payment methods like <line>Stripe</line>.",
+    "contact": "Contact me",
+    "message": "Please refer to <guidelines>the guidelines</guidelines>."
+  },
+
+  "Projects": {
+    "mission": "My missions",
+    "web": "See the website",
+    "list": [
+      {
+        "img": "/methodo.png",
+        "title": "Méthodo",
+        "alt": "Picture from Méthodo website",
+        "description": "Méthodo is an application that puts teachers and students in touch with each other. Students can book private lessons with a teacher of their choice.",
+        "stacks": ["nextjs", "nodejs", "ts", "prisma", "tailwind", "aws"],
+        "missions": [
+          "Complete application realization",
+          "Integration of the figma model",
+          "Stripe integration for payments",
+          "Deployment on AWS"
+        ],
+        "link": "https://xn--mthodo-bva.com/"
+      },
+      {
+        "img": "/koacher.png",
+        "title": "KOACHER",
+        "alt": "Picture from KOACHER website",
+        "description": "KOACHER is an application that puts sports coaches and students in touch with each other. Students can book and purchase private lessons with a coach of their choice.",
+        "stacks": ["react", "nodejs", "express", "ts", "sass"],
+        "missions": [
+          "New features added",
+          "Bug fixes",
+          "Frontend and backend modifications",
+          "Integration of the figma model",
+          "Creating the landing page"
+        ],
+        "link": "https://www.koacher.app/"
+      },
+      {
+        "img": "/remember.png",
+        "title": "Remember",
+        "alt": "Picture from Remember website",
+        "description": "Remember is an application inspired by Anki that helps you to memorize information efficiently, thanks to a card system.",
+        "stacks": [
+          "nextjs",
+          "nestjs",
+          "ts",
+          "prisma",
+          "tailwind",
+          "vercel",
+          "heroku"
+        ],
+        "missions": [
+          "Personal project that allowed me to learn Nest.Js",
+          "User registration / Login",
+          "CronJob for revision reminders"
+        ],
+        "link": "https://remember-frontend.vercel.app/"
+      },
+      {
+        "img": "/libden.png",
+        "title": "Libden",
+        "alt": "Picture from Libden website",
+        "description": "Libden is a libértinage application.  Users can meet and chat with each other. Users can also create events and invite other users.",
+        "stacks": ["js", "css", "html"],
+        "missions": ["Frontend development", "Integration of the figma model"],
+        "link": "https://libden.com/"
+      }
+    ]
+  }
+}
